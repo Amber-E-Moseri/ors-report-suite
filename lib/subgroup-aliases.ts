@@ -1,0 +1,43 @@
+export const FT_SUBGROUP_ALIASES: Record<string, string> = {
+  'central east subgroup a':     'Central East Subgroup A',
+  'central east sga':            'Central East Subgroup A',
+  'blw canada central-east sga': 'Central East Subgroup A',
+  'blw canada central east sga': 'Central East Subgroup A',
+  'canada central-east sga':     'Central East Subgroup A',
+  'canada central east sga':     'Central East Subgroup A',
+  'central-east sga':            'Central East Subgroup A',
+  'zz | central-east sga':       'Central East Subgroup A',
+
+  'central east subgroup b':     'Central East Subgroup B',
+  'central east sgb':            'Central East Subgroup B',
+  'blw canada central-east sgb': 'Central East Subgroup B',
+  'blw canada central east sgb': 'Central East Subgroup B',
+  'canada central-east sgb':     'Central East Subgroup B',
+  'canada central east sgb':     'Central East Subgroup B',
+  'central-east sgb':            'Central East Subgroup B',
+  'zz | central-east sgb':       'Central East Subgroup B',
+
+  'central subgroup a':          'Central Subgroup A',
+  'central sga':                 'Central Subgroup A',
+  'blw canada central sga':      'Central Subgroup A',
+  'canada central sga':          'Central Subgroup A',
+  'zz | central sga':            'Central Subgroup A',
+
+  'central subgroup b':          'Central Subgroup B',
+  'central sgb':                 'Central Subgroup B',
+  'blw canada central sgb':      'Central Subgroup B',
+  'canada central sgb':          'Central Subgroup B',
+  'zz | central sgb':            'Central Subgroup B',
+
+  'west subgroup a':             'West Subgroup A',
+  'west sga':                    'West Subgroup A',
+  'blw canada west sga':         'West Subgroup A',
+  'canada west sga':             'West Subgroup A',
+  'zz | west sga':               'West Subgroup A',
+
+  'west subgroup b':             'West Subgroup B',
+  'west sgb':                    'West Subgroup B',
+  'blw canada west sgb':         'West Subgroup B',
+  'canada west sgb':             'West Subgroup B',
+  'zz | west sgb':               'West Subgroup B',
+}
