@@ -1,12 +1,21 @@
 import type {
-  NoteRow, GroupRow, FTRow, GroupDirectory, GroupInfo,
-  SubgroupGroupData, NotesData, NoteAgg,
-  FTParsedSheet, AllFTData, ParsedFTRow, FTHierarchyEntry,
-  FollowUpSubgroup, FTSubgroup,
+  GroupDirectory,
+  GroupInfo,
+  SubgroupGroupData,
+  NotesData,
+  NoteAgg,
+  FTParsedSheet,
+  AllFTData,
+  ParsedFTRow,
+  FTHierarchyEntry,
+  FollowUpSubgroup,
 } from '@/types'
+
 import {
-  FOLLOW_UP_SUBGROUPS, FT_SUBGROUPS, SUBGROUP_CROSSWALK, CATEGORY_MAP,
+  FT_SUBGROUPS,
+  CATEGORY_MAP,
 } from '@/types'
+
 import { FT_SUBGROUP_ALIASES } from '@/lib/subgroup-aliases'
 
 // ─── UTILS ────────────────────────────────────────────────────────────────────
