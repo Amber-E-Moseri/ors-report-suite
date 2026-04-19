@@ -215,7 +215,7 @@ export async function upsertRosterEntry(entry: Partial<ExpectedRosterEntry> & { 
   const normalized = normalizeRosterEntry(entry)
   const idx = current.findIndex(m => m.id === normalized.id || m.matchKey === normalized.matchKey)
 
-  let next = [...current]
+  const next = [...current]
   if (idx >= 0) {
     const existing = next[idx]
     normalized.addedAt = existing.addedAt

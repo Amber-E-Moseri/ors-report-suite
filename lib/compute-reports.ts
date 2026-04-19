@@ -6,7 +6,7 @@ import type {
 } from '@/types'
 import { FOLLOW_UP_SUBGROUPS, SUBGROUP_CROSSWALK } from '@/types'
 import { safeRatio } from './parsers'
-import { gradeScore, gradeLabel } from './scoring'
+import { gradeScore } from './scoring'
 
 // ─── SUBGROUP REPORT ─────────────────────────────────────────────────────────
 

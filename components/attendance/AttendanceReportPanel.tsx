@@ -288,48 +288,6 @@ function PeopleList({ title, color, records, emptyMsg }: { title: string; color:
   )
 }
 
-// â”€â”€â”€ SUBGROUP DETAIL BREAKDOWN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-
-function SubgroupDetail({ subgroups, present, absent, absenteeMode, title, subgroupFilter = 'all' }: {
-  subgroups: SubgroupSummary[]
-  present: AttendanceRecord[]
-  absent: AttendanceRecord[]
-  absenteeMode: boolean
-  title?: string
-  subgroupFilter?: string
-}) {
-  const resolvedTitle = title || (absenteeMode ? 'SUBGROUP ABSENT DETAIL' : 'SUBGROUP PRESENT DETAIL')
-  const color = absenteeMode ? '#B91C1C' : '#1B5E3C'
-  const visibleSubgroups = subgroupFilter === 'all'
-    ? subgroups
-    : subgroups.filter(sg => sg.subgroup === subgroupFilter)
-
-  return (
-    <div className="space-y-4">
-      <div className="section-hdr" style={{ background: color }}>{resolvedTitle}</div>
-      {visibleSubgroups.map(sg => {
-        const records = (absenteeMode ? absent : present).filter(r => (r.subgroup || '(Unassigned)') === sg.subgroup)
-        if (!records.length) return null
-        return (
-          <div key={sg.subgroup} className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="flex items-center justify-between px-5 py-2.5 font-semibold text-sm" style={{ background: 'var(--brand-pale)', color: 'var(--brand-darkest)' }}>
-              <span>{sg.subgroup}</span>
-              <span className="px-2 py-0.5 rounded text-xs font-bold" style={{ background: color, color: '#fff' }}>{records.length}</span>
-            </div>
-            <div className="divide-y divide-slate-100">
-              {records.map((r, idx) => (
-                <div key={`${r.matchKey || 'record'}-${r.subgroup || 'na'}-${idx}`} className="flex items-center justify-between px-5 py-2 text-sm">
-                  <span className="font-medium" style={{ color: 'var(--brand-darkest)' }}>{r.fullName}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )
-      })}
-    </div>
-  )
-}
-
 // â”€â”€â”€ INTEGRITY LOG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function IntegrityLog({ entries }: { entries: { level: 'INFO' | 'WARN' | 'ERR'; message: string }[] }) {
