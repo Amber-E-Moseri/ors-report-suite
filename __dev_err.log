@@ -1,0 +1,33 @@
+ ⚠ Port 3000 is in use by process 3028, using available port 3001 instead.
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EPERM: operation not permitted, open 'C:\Users\moser\Downloads\ors-reports-suite-persistent-ministry-platform\.next\trace'
+Emitted 'error' event on WriteStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\moser\\Downloads\\ors-reports-suite-persistent-ministry-platform\\.next\\trace'
+}
+
+Node.js v20.15.0
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EPERM: operation not permitted, open 'C:\Users\moser\Downloads\ors-reports-suite-persistent-ministry-platform\.next\trace'
+Emitted 'error' event on WriteStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\moser\\Downloads\\ors-reports-suite-persistent-ministry-platform\\.next\\trace'
+}
+
+Node.js v20.15.0

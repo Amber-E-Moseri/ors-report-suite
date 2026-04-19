@@ -1,0 +1,10 @@
+
+> ors-report-suite@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:3001
+   - Network:      http://172.23.224.1:3001
+   - Environments: .env.local
+
+ ✓ Starting...
